@@ -1,0 +1,11 @@
+export PATH=/usr/local/openresty/nginx/sbin:$PATH /*添加系统变量*/
+
+which nginx /*查找nginx位置*/
+
+nginx -p $PWD/ -t  /*测试配置文件和进程是否有效，必须在worker目录下进行，即目录包含了conf和logs*/
+
+nginx -p $PWD/  /*启动当前worker的进程*/
+
+ps aux|grep nginx|grep -v /tmp/  /*查看所有nginx进程*/
+
+curl 'http:/127.0.0.1:8080/'  /*http访问*/
