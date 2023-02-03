@@ -1,8 +1,8 @@
 # cmake
 
-### 简述
+### Brief description
 
-cmake的作用是将项目做一个plan，“编译链接”时会按照这个plan进行，所以，CMakeLists.txt并不一定是按顺序执行的，它的作用只是描述plan
+The role of cmake is to make a plan for the project, and "compile and link" will follow this plan, so CMakeLists.txt is not necessarily executed in order, it only describes the plan.
 
 ## gcc/g++
 
@@ -47,9 +47,9 @@ add_library(<out file> SHARED <source files>...)
 target_link_libraries(<executable file> <libraries>...)
 ```
 
-## 区别
+## File Suffix
 
-- .o文件：编译时链接
-- .a文件：编译后链接
-- .so文件：运行时链接
+- .o文件：compile-time links
+- .a文件：compiled links
+- .so文件：run-time links
 

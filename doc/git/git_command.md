@@ -1,6 +1,6 @@
 # Git command
 
-## 创建版本库
+## Create repository
 
 ```
 $ git config --global user.name "<name>"
@@ -12,7 +12,7 @@ $ git clone <url> #clone a remote repository with SSH protocol or HTTPS protocol
 $ git init [folder] #initialize local repository
 ```
 
-## 修改和提交
+## Modify and submit
 
 ```
 $ git status #view status
@@ -21,14 +21,14 @@ $ git rm <file>
 $ git commit -m "<commit message>"
 ```
 
-## 查看提交历史
+## View submission history
 
 ```
 $ git log
 $ git log -p <file> #view the commit log of a given file
 ```
 
-## 撤销
+## Revocation
 
 ```
 $ git reset --hard HEAD
@@ -39,7 +39,7 @@ $ git checkout .
 $ git chekcout <file>
 ```
 
-## 分支与标签
+## Branches and Labels
 
 ```
 $ git branch
@@ -53,7 +53,7 @@ $ git diff <branch>
 $ git cherry-pick <commit>
 ```
 
-## 合并与衍合
+## Mergers and Derivatives
 
 ```
 $ git merge <branch>
@@ -61,7 +61,7 @@ $ git merge --strategy-option=theirs <other branch> #Force the merging of other 
 $ git rebase <branch>
 ```
 
-## 远程操作
+## Remote
 
 ```
 $ ssh -T <url>
