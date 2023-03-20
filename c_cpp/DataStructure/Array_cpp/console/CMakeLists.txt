@@ -4,4 +4,4 @@ add_executable(console ${srcs})
 
 target_include_directories(console PUBLIC include)
 
-target_link_libraries(console PUBLIC arrays)
+target_link_libraries(console PUBLIC array)

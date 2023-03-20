@@ -1,10 +1,10 @@
-#include <console/console.h>
+#include <array/array.h>
 #include <iostream>
 using namespace std;
-using namespace arrays;
-static char data_structure_type[10] = {"Arrays"};
+using namespace Array_cpp;
+static char data_structure_type[10] = {"Array"};
 int main() {
-    Arrays arrays;
+    Array array;
     short operatorNumber;
     while (true)
     {
@@ -20,25 +20,25 @@ int main() {
         if(operatorNumber == 7) {return 0;}
         switch(operatorNumber){
             case 1:
-                arrays.arraysInit();
+                array.arrayInit();
                 break;
             case 2:
-                arrays.showArrays();
+                array.showArray();
                 break;
             case 3:
-                arrays.readOne();
+                array.readOne();
                 break;
             case 4:
-                arrays.addData();
-                arrays.showArrays();
+                array.addData();
+                array.showArray();
                 break;
             case 5:
-                arrays.deleteData();
-                arrays.showArrays();
+                array.deleteData();
+                array.showArray();
                 break;
             case 6:
-                arrays.updateData();
-                arrays.showArrays();
+                array.updateData();
+                array.showArray();
                 break;
             default:
                 cout<<"No such operation! Please input again\n"<<endl;

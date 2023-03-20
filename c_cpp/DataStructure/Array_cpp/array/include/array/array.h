@@ -1,8 +1,8 @@
 #pragma once
-#ifndef ARRAYS_ARRAYS_H
-#define ARRAYS_ARRAYS_H
+#ifndef Array_Array_H
+#define Array_Array_H
 #define MAX_SIZE 100
-namespace arrays 
+namespace Array_cpp 
 {
 
 typedef struct {
@@ -10,21 +10,21 @@ typedef struct {
     int age;
 }Student;
 
-class Arrays {
+class Array {
 private:
     Student data[MAX_SIZE];
     int length;
 public:
-    Arrays();
-    short arraysInit();
-    void showArrays();
+    Array();
+    short arrayInit();
+    void showArray();
     void readOne();
     short addData();
     short deleteData();
     short updateData();
-    ~Arrays();
+    ~Array();
 };
 
 }
 
-#endif //ARRAYS_ARRAYS_H
+#endif //Array_Array_H
