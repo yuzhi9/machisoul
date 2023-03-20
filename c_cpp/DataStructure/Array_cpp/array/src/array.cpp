@@ -1,19 +1,19 @@
-#include <arrays/arrays.h>
+#include <array/array.h>
 #include <iostream>
 #include <string.h>
 using namespace std;
-namespace arrays
+namespace Array_cpp
 {
-Arrays::Arrays() {
+Array::Array() {
     this->length = 0;
-    cout << "Created a Arrays instance!" << endl;
+    cout << "Created a Array instance!" << endl;
 }
 
-Arrays::~Arrays() {
-    cout << "Destory a Arrays instance!" << endl;
+Array::~Array() {
+    cout << "Destory a Array instance!" << endl;
 }
 
-short Arrays::arraysInit() {
+short Array::arrayInit() {
     char nameTemp[10];
     int ageTemp;
     cout << "Please input the data, format is: <name age>, input <null> to end initialization" << endl;
@@ -27,14 +27,14 @@ short Arrays::arraysInit() {
     }
 }
 
-void Arrays::showArrays() {
+void Array::showArray() {
     for (int i = 0; i < this->length; i++) {
         cout << "[" << i + 1 << ". " << this->data[i].name << " " << this->data[i].age << "]------";
     }
     cout << "\n\n\n";
 }
 
-void Arrays::readOne() {
+void Array::readOne() {
     int dataNumber;
     cout << "Please input the data number you want read:" << endl;
     cin >> dataNumber;
@@ -47,7 +47,7 @@ void Arrays::readOne() {
     cout << "\n\n\n";
 }
 
-short Arrays::addData() {
+short Array::addData() {
     char nameTemp[10];
     int ageTemp;
     int dataNumber;
@@ -65,7 +65,7 @@ short Arrays::addData() {
     this->length++;
 }
 
-short Arrays::deleteData() {
+short Array::deleteData() {
     int dataNumber;
     cout << "Please input the data number you want delete:" << endl;
     cin >> dataNumber;
@@ -83,7 +83,7 @@ short Arrays::deleteData() {
     return 0;
 }
 
-short Arrays::updateData() {
+short Array::updateData() {
     char nameTemp[10];
     int ageTemp;
     int dataNumber;
