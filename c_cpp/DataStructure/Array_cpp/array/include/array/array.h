@@ -1,16 +1,19 @@
 #pragma once
-#ifndef Array_Array_H
-#define Array_Array_H
+#ifndef ARRAY_CPP_H
+#define ARRAY_CPP_H
 #define MAX_SIZE 100
-namespace Array_cpp 
+namespace array_cpp 
 {
 
-typedef struct {
+typedef struct 
+{
+    /*data*/
     char name[10];
     int age;
 }Student;
 
-class Array {
+class Array 
+{
 private:
     Student data[MAX_SIZE];
     int length;
@@ -27,4 +30,4 @@ public:
 
 }
 
-#endif //Array_Array_H
+#endif //ARRAY_CPP_H

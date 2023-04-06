@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-namespace Array_cpp
+namespace array_cpp
 {
 Array::Array() {
     this->length = 0;

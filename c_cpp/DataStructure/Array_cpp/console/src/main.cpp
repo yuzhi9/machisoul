@@ -1,7 +1,7 @@
 #include <array/array.h>
 #include <iostream>
 using namespace std;
-using namespace Array_cpp;
+using namespace array_cpp;
 static char data_structure_type[10] = {"Array"};
 int main() {
     Array array;
