@@ -70,6 +70,7 @@ $ git remote -v
 $ git remote add <remote> <url>
 $ git pull
 $ git pull <remote> <remote branch>
+$ git checkout -b <local branch> <remote>/<remote branch> #checkout to remote branch
 $ git push
 $ git push <remote> <remote branch>
 $ git push -f <remote> <remote branch> #-f meaning is force
